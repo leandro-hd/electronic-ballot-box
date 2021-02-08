@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urna Eletrônica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="title">URNA ELETRÔNICA</h1>
+
+  <div class="urn">
+    <div class="screen">
+      <div class="screen-area">
+        <div class="screen-info">
+          <div class="row-01">
+            <span>SEU VOTO PARA</span>
+          </div>
+          <div class="row-02">
+            <span>Vereador</span>
+          </div>
+          <div class="row-03">
+            <div class="number blink"></div>
+            <div class="number"></div>
+          </div>
+          <div class="row-04">
+            
+          </div>
+        </div>
+        <div class="image-area">
+          <div class="image">
+            <img src="" alt=""> Prefeito
+          </div>
+          <div class="image small">
+            <img src="" alt=""> Vice-Prefeito
+          </div>
+        </div>
+      </div>
+      <div class="screen-about">
+        Aperte a tela: <br/>
+        CONFIRMA para CONFIRMAR este voto <br/>
+        CORRIGE para REINICIAR este voto
+      </div>
+    </div>
+    
+    <div class="keyboard">
+      <div class="keyboard-title">
+        JUSTIÇA <br/>
+        ELEITORAL
+      </div>
+      <div class="keyboard-row">
+        <div class="keyboard-button" onclick="clickNumber('1')">1</div>
+        <div class="keyboard-button" onclick="clickNumber('2')">2</div>
+        <div class="keyboard-button" onclick="clickNumber('3')">3</div>
+      </div>   
+      <div class="keyboard-row">
+        <div class="keyboard-button" onclick="clickNumber('4')">4</div>
+        <div class="keyboard-button" onclick="clickNumber('5')">5</div>
+        <div class="keyboard-button" onclick="clickNumber('6')">6</div>
+      </div>  
+      <div class="keyboard-row">
+        <div class="keyboard-button" onclick="clickNumber('7')">7</div>
+        <div class="keyboard-button" onclick="clickNumber('8')">8</div>
+        <div class="keyboard-button" onclick="clickNumber('9')">9</div>
+      </div>   
+      <div class="keyboard-row">
+        <div class="keyboard-button" onclick="clickNumber('0')">0</div>
+      </div>
+      <div class="keyboard-row">
+        <div class="keyboard-button btn-blank" onclick="blank()">BRANCO</div>
+        <div class="keyboard-button btn-alert" onclick="restart()">CORRIGE</div>
+        <div class="keyboard-button btn-success" onclick="confirm()">CONFIRMA</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="etapas.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
